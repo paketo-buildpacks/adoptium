@@ -22,25 +22,116 @@ version = "{{.Version}}"
 [[stacks]]
 id = "io.buildpacks.stacks.bionic"
 
-# [[metadata.dependencies]]
-# id      = ""
-# name    = ""
-# version = ""
-# uri     = ""
-# sha256  = ""
-# stacks  = [ "io.buildpacks.stacks.bionic" ]
+[metadata.default-versions]
+jdk = "11.*"
+jre = "11.*"
 
-#   [[metadata.dependencies.licenses]]
-#   type = "<TYPE>"
-#   uri  = "<URI>"
+[[metadata.dependencies]]
+id      = "jre"
+name    = "AdoptOpenJDK JRE"
+version = "8.0.242"
+uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_x64_linux_hotspot_8u242b08.tar.gz"
+sha256  = "5edfaefdbb0469d8b24d61c8aef80c076611053b1738029c0232b9a632fe2708"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jre"
+name    = "AdoptOpenJDK JRE"
+version = "11.0.6"
+uri     = "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.6%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.6_10.tar.gz"
+sha256  = "c5a4e69e2be0e3e5f5bb7c759960b20650967d0f571baad4a7f15b2c03bda352"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jre"
+name    = "AdoptOpenJDK JRE"
+version = "13.0.2"
+uri     = "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_linux_hotspot_13.0.2_8.tar.gz"
+sha256  = "897f16fe8e056395209e35d2384013bd1ff250e717465769079e3f4793628c34"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "AdoptOpenJDK JDK"
+version = "8.0.242"
+uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz"
+sha256  = "f39b523c724d0e0047d238eb2bb17a9565a60574cf651206c867ee5fc000ab43"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "AdoptOpenJDK JDK"
+version = "11.0.6"
+uri     = "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.6%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.6_10.tar.gz"
+sha256  = "330d19a2eaa07ed02757d7a785a77bab49f5ee710ea03b4ee2fa220ddd0feffc"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "AdoptOpenJDK JDK"
+version = "13.0.2"
+uri     = "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz"
+sha256  = "9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jvmkill"
+name    = "JVMKill Agent"
+version = "1.16.0"
+uri     = "https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so"
+sha256  = "a3092627b082cb3cdbbe4b255d35687126aa604e6b613dcda33be9f7e1277162"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/jvmkill/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "memory-calculator"
+name    = "Memory Calculator"
+version = "4.0.0"
+uri     = "https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-4.0.0.tgz"
+sha256  = "90d40eab6959a7b4059c6409c4505040e8a04f75a481f7282e53430df3edda3e"
+stacks  = [ "io.buildpacks.stacks.bionic" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/java-buildpack-memory-calculator/blob/master/LICENSE"
 
 [metadata]
-pre_package   = "scripts/build.sh"
-include_files = [
+pre-package   = "scripts/build.sh"
+include-files = [
   "LICENSE",
   "NOTICE",
   "README.md",
   "bin/build",
+  "bin/class-counter",
   "bin/detect",
+  "bin/link-local-dns",
+  "bin/security-providers-configurer",
   "buildpack.toml",
 ]

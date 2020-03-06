@@ -7,5 +7,8 @@ if [[ -d ../go-cache ]]; then
   export GOPATH
 fi
 
-GOOS="linux" go build -ldflags='-s -w' -o bin/build cmd/build/main.go
-GOOS="linux" go build -ldflags='-s -w' -o bin/detect cmd/detect/main.go
+GOOS="linux" go build -ldflags='-s -w' -o bin/build github.com/paketoio/adopt-openjdk/cmd/build
+GOOS="linux" go build -ldflags='-s -w' -o bin/class-counter github.com/paketoio/libjvm/cmd/class-counter
+GOOS="linux" go build -ldflags='-s -w' -o bin/detect github.com/paketoio/adopt-openjdk/cmd/detect
+GOOS="linux" go build -ldflags='-s -w' -o bin/link-local-dns github.com/paketoio/libjvm/cmd/link-local-dns
+GOOS="linux" go build -ldflags='-s -w' -o bin/security-providers-configurer github.com/paketoio/libjvm/cmd/security-providers-configurer
