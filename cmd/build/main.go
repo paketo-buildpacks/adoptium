@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"github.com/paketoio/libjvm"
-	"github.com/paketoio/libpak"
-	"github.com/paketoio/libpak/bard"
+	"github.com/paketo-buildpacks/libjvm"
+	"github.com/paketo-buildpacks/libpak"
+	"github.com/paketo-buildpacks/libpak/bard"
 )
 
 func main() {

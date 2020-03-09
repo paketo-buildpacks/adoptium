@@ -15,7 +15,7 @@
 api = "0.2"
 
 [buildpack]
-id      = "paketoio/adopt-openjdk"
+id      = "paketo-buildpacks/adopt-openjdk"
 name    = "Paketo AdoptOpenJDK Buildpack"
 version = "{{.Version}}"
 

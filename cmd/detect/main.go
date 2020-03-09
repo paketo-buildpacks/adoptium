@@ -18,7 +18,7 @@ package main
 
 import (
 	"github.com/buildpacks/libcnb"
-	"github.com/paketoio/libjvm"
+	"github.com/paketo-buildpacks/libjvm"
 )
 
 func main() {
