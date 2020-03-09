@@ -55,7 +55,7 @@ id      = "jre"
 name    = "AdoptOpenJDK JRE"
 version = "13.0.2"
 uri     = "https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_linux_hotspot_13.0.2_8.tar.gz"
-sha256  = "placeholder"
+sha256  = "897f16fe8e056395209e35d2384013bd1ff250e717465769079e3f4793628c34"
 stacks  = [ "io.buildpacks.stacks.bionic" ]
 
   [[metadata.dependencies.licenses]]
