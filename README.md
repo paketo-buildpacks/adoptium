@@ -1,4 +1,4 @@
-# `adopt-openjdk`
+# `paketo-buildpacks/adopt-openjdk`
 The Paketo AdoptOpenJDK Buildpack is a Cloud Native Buildpack that provides the AdoptOpenJDK implementations of JREs and JDKs.
 
 This buildpack is designed to work in collaboration with other buildpacks which request contributions of JREs and JDKs.
