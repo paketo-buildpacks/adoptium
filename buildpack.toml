@@ -77,9 +77,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "jre"
 name    = "AdoptOpenJDK JRE"
-version = "14.0.1"
-uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz"
-sha256  = "3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca"
+version = "14.0.2"
+uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz"
+sha256  = "1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
