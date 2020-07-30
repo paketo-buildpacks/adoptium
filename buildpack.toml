@@ -53,9 +53,9 @@ build       = true
 [[metadata.dependencies]]
 id      = "jre"
 name    = "AdoptOpenJDK JRE"
-version = "8.0.262"
-uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz"
-sha256  = "3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4"
+version = "8.0.265"
+uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jre_x64_linux_hotspot_8u265b01.tar.gz"
+sha256  = "9bce39f63d24626da75778f240294fa466a0ed117e32db798164621fe30b0723"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
