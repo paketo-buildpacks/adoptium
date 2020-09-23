@@ -92,6 +92,18 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 
 [[metadata.dependencies]]
+id      = "jre"
+name    = "AdoptOpenJDK JRE"
+version = "15.0.0"
+uri     = ""
+sha256  = ""
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
 id      = "jdk"
 name    = "AdoptOpenJDK JDK"
 version = "8.0.265"
@@ -121,6 +133,18 @@ name    = "AdoptOpenJDK JDK"
 version = "14.0.2"
 uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz"
 sha256  = "7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "AdoptOpenJDK JDK"
+version = "15.0.0"
+uri     = ""
+sha256  = ""
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
