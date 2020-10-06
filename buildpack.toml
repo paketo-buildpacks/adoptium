@@ -143,8 +143,8 @@ uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 id      = "jre"
 name    = "AdoptOpenJDK JRE"
 version = "15.0.0"
-uri     = "placeholder"
-sha256  = "placeholder"
+uri     = "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15%2B36/OpenJDK15U-jre_x64_linux_hotspot_15_36.tar.gz"
+sha256  = "230d97a6b16a0735f15013a91f7582a22282ec12bdfaec291ab63274cc075efb"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
