@@ -1,6 +1,5 @@
 name: Update jvmkill
 "on":
-    pull_request: {}
     schedule:
         - cron: 30 * * * *
     workflow_dispatch: {}

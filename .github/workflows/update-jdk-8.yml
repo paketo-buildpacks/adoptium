@@ -1,6 +1,5 @@
 name: Update JDK 8
 "on":
-    pull_request: {}
     schedule:
         - cron: 30 * * * *
     workflow_dispatch: {}
