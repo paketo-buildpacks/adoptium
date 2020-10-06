@@ -70,9 +70,9 @@ uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 [[metadata.dependencies]]
 id      = "jre"
 name    = "AdoptOpenJDK JRE"
-version = "8.0.0"
-uri     = "placeholder"
-sha256  = "placeholder"
+version = "8.0.265"
+uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jre_x64_linux_hotspot_8u265b01.tar.gz"
+sha256  = "9bce39f63d24626da75778f240294fa466a0ed117e32db798164621fe30b0723"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
