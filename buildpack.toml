@@ -63,9 +63,9 @@ uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/j
 sha256  = "1285da6278f2d38a790a21148d7e683f20de0799c44b937043830ef6b57f58c4"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
-[[metadata.dependencies.licenses]]
-type = "GPL-2.0 WITH Classpath-exception-2.0"
-uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 
 [[metadata.dependencies]]
 id      = "jre"
@@ -87,9 +87,9 @@ uri     = "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/
 sha256  = "6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
-[[metadata.dependencies.licenses]]
-type = "GPL-2.0 WITH Classpath-exception-2.0"
-uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 
 [[metadata.dependencies]]
 id      = "jre"
@@ -111,9 +111,9 @@ uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/
 sha256  = "7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
-[[metadata.dependencies.licenses]]
-type = "GPL-2.0 WITH Classpath-exception-2.0"
-uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 
 [[metadata.dependencies]]
 id      = "jre"
@@ -135,9 +135,9 @@ uri     = "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/
 sha256  = "c198593d1b5188ee3570e2ca33c3bc004aaefbda2c11e68e58ae7296cf5c3982"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
-[[metadata.dependencies.licenses]]
-type = "GPL-2.0 WITH Classpath-exception-2.0"
-uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 
 [[metadata.dependencies]]
 id      = "jre"
