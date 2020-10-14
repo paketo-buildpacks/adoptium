@@ -10,6 +10,11 @@ jobs:
         runs-on:
             - ubuntu-latest
         steps:
+            - name: Dump GitHub context
+              env:
+                ALPHA: ${{ github.event.pull_request.head.repo.fork }}
+                BRAVO: ${{ github.event.pull_request.base.repo.fork }}
+              run: echo "${ALPHA} ${BRAVO}"
             - name: Docker login gcr.io
               uses: docker/login-action@v1
               with:
