@@ -7,12 +7,12 @@ codeowners:
 package:
   repository:     gcr.io/paketo-buildpacks/adopt-openjdk
   register:       true
-  registry_token: ${{ secrets.JAVA_BUILDPACK_REGISTRY_TOKEN }}
+  registry_token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 
 docker_credentials:
 - registry: gcr.io
   username: _json_key
-  password: ${{ secrets.JAVA_GCLOUD_SERVICE_ACCOUNT_KEY }}
+  password: ${{ secrets.JAVA_GITHUB_TOKEN }}
 
 dependencies:
 - name:            JDK 8
