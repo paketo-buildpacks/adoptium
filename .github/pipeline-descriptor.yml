@@ -14,7 +14,7 @@ package:
 docker_credentials:
 - registry: gcr.io
   username: _json_key
-  password: ${{ secrets.JAVA_GITHUB_TOKEN }}
+  password: ${{ secrets.JAVA_GCLOUD_SERVICE_ACCOUNT_KEY }}
 
 dependencies:
 - name:            JDK 8
