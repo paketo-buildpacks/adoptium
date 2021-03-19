@@ -65,6 +65,22 @@ dependencies:
     implementation: hotspot
     type:           jre
     version:        "[15,16)"
+- name:            JDK 16
+  id:              jdk
+  version_pattern: "16\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[16,17)"
+- name:            JRE 16
+  id:              jre
+  version_pattern: "16\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[16,17)"
 - id:   jvmkill
   uses: docker://ghcr.io/paketo-buildpacks/actions/github-release-dependency:main
   with:
