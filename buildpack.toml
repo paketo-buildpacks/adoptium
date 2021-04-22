@@ -58,9 +58,9 @@ launch      = true
 [[metadata.dependencies]]
 id      = "jdk"
 name    = "AdoptOpenJDK JDK"
-version = "8.0.282"
-uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u282b08.tar.gz"
-sha256  = "e6e6e0356649b9696fa5082cfcb0663d4bef159fc22d406e3a012e71fce83a5c"
+version = "8.0.292"
+uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz"
+sha256  = "0949505fcf42a1765558048451bb2a22e84b3635b1a31dd6191780eeccaa4ada"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
