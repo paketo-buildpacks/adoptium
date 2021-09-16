@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/adopt-openjdk
+module github.com/paketo-buildpacks/adoptium
 
 go 1.15
 

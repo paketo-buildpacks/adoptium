@@ -42,7 +42,7 @@ jobs:
                 YJ_VERSION: 5.0.0
             - uses: actions/checkout@v2
             - id: dependency
-              uses: docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+              uses: docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
               with:
                 implementation: hotspot
                 type: jdk

@@ -15,16 +15,16 @@
 api = "0.6"
 
 [buildpack]
-id          = "paketo-buildpacks/adopt-openjdk"
-name        = "Paketo AdoptOpenJDK Buildpack"
+id          = "paketo-buildpacks/adoptium"
+name        = "Paketo Adoptium Buildpack"
 version     = "{{.version}}"
-homepage    = "https://github.com/paketo-buildpacks/adopt-openjdk"
-description = "A Cloud Native Buildpack that provides the AdoptOpenJDK implementations of JREs and JDKs"
+homepage    = "https://github.com/paketo-buildpacks/adoptium"
+description = "A Cloud Native Buildpack that provides the Adoptium implementations of JREs and JDKs"
 keywords    = ["java", "jvm", "jre", "jdk"]
 
 [[buildpack.licenses]]
 type = "Apache-2.0"
-uri  = "https://github.com/paketo-buildpacks/adopt-openjdk/blob/main/LICENSE"
+uri  = "https://github.com/paketo-buildpacks/adoptium/blob/main/LICENSE"
 
 [[stacks]]
 id = "io.buildpacks.stacks.bionic"
@@ -78,7 +78,7 @@ launch      = true
 
 [[metadata.dependencies]]
 id      = "jdk"
-name    = "AdoptOpenJDK JDK"
+name    = "Adoptium JDK"
 version = "8.0.302"
 uri     = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz"
 sha256  = "cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a"
@@ -90,7 +90,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
 [[metadata.dependencies]]
 id      = "jre"
-name    = "AdoptOpenJDK JRE"
+name    = "Adoptium JRE"
 version = "8.0.302"
 uri     = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_hotspot_8u302b08.tar.gz"
 sha256  = "a74e63657ad04151a8f95202071d2895f1cc9295c910ad3c361ff1cc27395107"
@@ -102,7 +102,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
 [[metadata.dependencies]]
 id      = "jdk"
-name    = "AdoptOpenJDK JDK"
+name    = "Adoptium JDK"
 version = "11.0.12"
 uri     = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz"
 sha256  = "8770f600fc3b89bf331213c7aa21f8eedd9ca5d96036d1cd48cb2748a3dbefd2"
@@ -114,7 +114,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
 [[metadata.dependencies]]
 id      = "jre"
-name    = "AdoptOpenJDK JRE"
+name    = "Adoptium JRE"
 version = "11.0.12"
 uri     = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.12_7.tar.gz"
 sha256  = "e813e270b7ea0a13f9c400ce5abd4cb811aacbd536b8909e6c7f0e346f78348c"
@@ -126,7 +126,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
 [[metadata.dependencies]]
 id      = "jdk"
-name    = "AdoptOpenJDK JDK"
+name    = "Adoptium JDK"
 version = "16.0.2"
 uri     = "https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_linux_hotspot_16.0.2_7.tar.gz"
 sha256  = "323d6d7474a359a28eff7ddd0df8e65bd61554a8ed12ef42fd9365349e573c2c"
@@ -135,30 +135,6 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
   [[metadata.dependencies.licenses]]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
   uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jre"
-name    = "AdoptOpenJDK JRE"
-version = "16.0.1"
-uri     = "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16.0.1%2B9/OpenJDK16U-jre_x64_linux_hotspot_16.0.1_9.tar.gz"
-sha256  = "5eca19d406c6d130e9c3a4b932b9cb0a6e9cd45932450668c3e911bded4bcf40"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jvmkill"
-name    = "JVMKill Agent"
-version = "1.16.0"
-uri     = "https://github.com/cloudfoundry/jvmkill/releases/download/v1.16.0.RELEASE/jvmkill-1.16.0-RELEASE.so"
-sha256  = "a3092627b082cb3cdbbe4b255d35687126aa604e6b613dcda33be9f7e1277162"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "Apache-2.0"
-  uri  = "https://github.com/cloudfoundry/jvmkill/blob/main/LICENSE"
 
 [metadata]
 pre-package   = "scripts/build.sh"
