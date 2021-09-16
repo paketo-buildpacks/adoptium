@@ -57,17 +57,3 @@ dependencies:
     implementation: hotspot
     type:           jdk
     version:        "[16,17)"
-- name:            JRE 16
-  id:              jre
-  version_pattern: "16\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
-  with:
-    implementation: hotspot
-    type:           jre
-    version:        "[16,17)"
-- id:   jvmkill
-  uses: docker://ghcr.io/paketo-buildpacks/actions/github-release-dependency:main
-  with:
-    owner:      cloudfoundry
-    repository: jvmkill
-    token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
