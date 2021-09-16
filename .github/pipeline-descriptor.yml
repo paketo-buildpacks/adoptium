@@ -7,7 +7,7 @@ codeowners:
   owner: "@paketo-buildpacks/java-buildpacks"
 
 package:
-  repository:     gcr.io/paketo-buildpacks/adopt-openjdk
+  repository:     gcr.io/paketo-buildpacks/adoptium
   register:       true
   registry_token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 
@@ -20,7 +20,7 @@ dependencies:
 - name:            JDK 8
   id:              jdk
   version_pattern: "8\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jdk
@@ -28,7 +28,7 @@ dependencies:
 - name:            JRE 8
   id:              jre
   version_pattern: "8\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jre
@@ -36,7 +36,7 @@ dependencies:
 - name:            JDK 11
   id:              jdk
   version_pattern: "11\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jdk
@@ -44,7 +44,7 @@ dependencies:
 - name:            JRE 11
   id:              jre
   version_pattern: "11\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jre
@@ -52,7 +52,7 @@ dependencies:
 - name:            JDK 16
   id:              jdk
   version_pattern: "16\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jdk
@@ -60,7 +60,7 @@ dependencies:
 - name:            JRE 16
   id:              jre
   version_pattern: "16\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jre

@@ -1,8 +1,10 @@
-# `gcr.io/paketo-buildpacks/adopt-openjdk`
+# `gcr.io/paketo-buildpacks/adoptium`
 
-The Paketo AdoptOpenJDK Buildpack is a Cloud Native Buildpack that provides the AdoptOpenJDK implementations of JREs and JDKs.
+The Paketo Adoptium Buildpack is a Cloud Native Buildpack that provides the Adoptium implementations of JREs and JDKs.
 
 This buildpack is designed to work in collaboration with other buildpacks which request contributions of JREs and JDKs.
+
+The Paketo Adoptium Buildpack is the successor to the Paketo AdoptOpenJDK Buildpack. This change is to keep the Paketo buildpacks in sync with [changes to the upstream project](https://adoptium.net/faq.html#AdoptOpenJDK).
 
 ## Behavior
 
@@ -32,6 +34,8 @@ The buildpack will do the following if a JRE is requested:
 * Contributes Memory Calculator to a layer marked `launch`
 * Contributes Heap Dump helper to a layer marked `launch`
 
+Please note that starting with Java version 16, the upstream Adoptium project has elected to [forgo JRE releases](https://adoptium.net/faq.html#jres). As such, this buildpack will only include JREs for Java 8 and 11. If you select a JRE for 16+, you'll end up with a JDK instead.
+
 ## Configuration
 
 | Environment Variable          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -44,7 +48,7 @@ The buildpack will do the following if a JRE is requested:
 | `$BPL_HEAP_DUMP_PATH`         | Configure the location for writing heap dumps in the event of an OutOfMemoryError exception. Defaults to ``, which disables writing heap dumps. The path set must be writable by the JVM process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `$JAVA_TOOL_OPTIONS`          | Configure the JVM launch flags                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-[bpv]: https://github.com/paketo-buildpacks/adopt-openjdk/releases
+[bpv]: https://github.com/paketo-buildpacks/adoptium/releases
 
 ## Bindings
 
