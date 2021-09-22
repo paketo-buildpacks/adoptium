@@ -136,6 +136,18 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
   uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
 
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "Adoptium JDK"
+version = "17.0.0"
+uri     = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz"
+sha256  = "6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7"
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+
 [metadata]
 pre-package   = "scripts/build.sh"
 include-files = [
