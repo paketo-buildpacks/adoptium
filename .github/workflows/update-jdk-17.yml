@@ -47,8 +47,8 @@ jobs:
                 implementation: hotspot
                 type: jdk
                 version: '[17,18)'
-            - id: buildpack
-              name: Update Buildpack Dependency
+            - name: Update Buildpack Dependency
+              id: buildpack
               run: |
                 #!/usr/bin/env bash
 
