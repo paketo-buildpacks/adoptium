@@ -15,190 +15,181 @@
 api = "0.6"
 
 [buildpack]
-id          = "paketo-buildpacks/adoptium"
-name        = "Paketo Adoptium Buildpack"
-version     = "{{.version}}"
-homepage    = "https://github.com/paketo-buildpacks/adoptium"
-description = "A Cloud Native Buildpack that provides the Adoptium implementations of JREs and JDKs"
-keywords    = ["java", "jvm", "jre", "jdk"]
+  description = "A Cloud Native Buildpack that provides the Adoptium implementations of JREs and JDKs"
+  homepage = "https://github.com/paketo-buildpacks/adoptium"
+  id = "paketo-buildpacks/adoptium"
+  keywords = ["java", "jvm", "jre", "jdk"]
+  name = "Paketo Adoptium Buildpack"
+  version = "{{.version}}"
 
-[[buildpack.licenses]]
-type = "Apache-2.0"
-uri  = "https://github.com/paketo-buildpacks/adoptium/blob/main/LICENSE"
-
-[[stacks]]
-id = "io.buildpacks.stacks.bionic"
-
-[[stacks]]
-id = "io.paketo.stacks.tiny"
-
-[[stacks]]
-id = "*"
-
-[[metadata.configurations]]
-name        = "BPL_JVM_HEAD_ROOM"
-description = "the headroom in memory calculation"
-default     = "0"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JVM_LOADED_CLASS_COUNT"
-description = "the number of loaded classes in memory calculation"
-default     = "35% of classes"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JVM_THREAD_COUNT"
-description = "the number of threads in memory calculation"
-default     = "250"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_HEAP_DUMP_PATH"
-description = "write heap dumps on error to this path"
-default     = ""
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JAVA_NMT_ENABLED"
-description = "enables Java Native Memory Tracking (NMT)"
-default     = "true"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JAVA_NMT_LEVEL"
-description = "configure level of NMT, summary or detail"
-default     = "summary"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JMX_ENABLED"
-description = "enables Java Management Extensions (JMX)"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JMX_PORT"
-description = "configure the JMX port"
-default     = "5000"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_ENABLED"
-description = "enables Java remote debugging support"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_PORT"
-description = "configure the remote debugging port"
-default     = "8000"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_SUSPEND"
-description = "configure whether to suspend execution until a debugger has attached"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BP_JVM_VERSION"
-description = "the Java version"
-default     = "11"
-build       = true
-
-[[metadata.configurations]]
-name        = "BP_JVM_TYPE"
-description = "the JVM type - JDK or JRE"
-default     = "JRE"
-build       = true
-
-[[metadata.configurations]]
-name        = "JAVA_TOOL_OPTIONS"
-description = "the JVM launch flags"
-launch      = true
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Adoptium JDK"
-version = "8.0.302"
-uri     = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz"
-sha256  = "cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jre"
-name    = "Adoptium JRE"
-version = "8.0.302"
-uri     = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_hotspot_8u302b08.tar.gz"
-sha256  = "a74e63657ad04151a8f95202071d2895f1cc9295c910ad3c361ff1cc27395107"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Adoptium JDK"
-version = "11.0.12"
-uri     = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz"
-sha256  = "8770f600fc3b89bf331213c7aa21f8eedd9ca5d96036d1cd48cb2748a3dbefd2"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jre"
-name    = "Adoptium JRE"
-version = "11.0.12"
-uri     = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.12_7.tar.gz"
-sha256  = "e813e270b7ea0a13f9c400ce5abd4cb811aacbd536b8909e6c7f0e346f78348c"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Adoptium JDK"
-version = "16.0.2"
-uri     = "https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_linux_hotspot_16.0.2_7.tar.gz"
-sha256  = "323d6d7474a359a28eff7ddd0df8e65bd61554a8ed12ef42fd9365349e573c2c"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Adoptium JDK"
-version = "17.0.0"
-uri     = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz"
-sha256  = "6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://openjdk.java.net/legal/gplv2+ce.html"
+  [[buildpack.licenses]]
+    type = "Apache-2.0"
+    uri = "https://github.com/paketo-buildpacks/adoptium/blob/main/LICENSE"
 
 [metadata]
-pre-package   = "scripts/build.sh"
-include-files = [
-  "LICENSE",
-  "NOTICE",
-  "README.md",
-  "bin/build",
-  "bin/detect",
-  "bin/helper",
-  "bin/main",
-  "buildpack.toml",
-]
+  include-files = ["LICENSE", "NOTICE", "README.md", "bin/build", "bin/detect", "bin/helper", "bin/main", "buildpack.toml"]
+  pre-package = "scripts/build.sh"
+
+  [[metadata.configurations]]
+    default = "0"
+    description = "the headroom in memory calculation"
+    launch = true
+    name = "BPL_JVM_HEAD_ROOM"
+
+  [[metadata.configurations]]
+    default = "35% of classes"
+    description = "the number of loaded classes in memory calculation"
+    launch = true
+    name = "BPL_JVM_LOADED_CLASS_COUNT"
+
+  [[metadata.configurations]]
+    default = "250"
+    description = "the number of threads in memory calculation"
+    launch = true
+    name = "BPL_JVM_THREAD_COUNT"
+
+  [[metadata.configurations]]
+    default = ""
+    description = "write heap dumps on error to this path"
+    launch = true
+    name = "BPL_HEAP_DUMP_PATH"
+
+  [[metadata.configurations]]
+    default = "true"
+    description = "enables Java Native Memory Tracking (NMT)"
+    launch = true
+    name = "BPL_JAVA_NMT_ENABLED"
+
+  [[metadata.configurations]]
+    default = "summary"
+    description = "configure level of NMT, summary or detail"
+    launch = true
+    name = "BPL_JAVA_NMT_LEVEL"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "enables Java Management Extensions (JMX)"
+    launch = true
+    name = "BPL_JMX_ENABLED"
+
+  [[metadata.configurations]]
+    default = "5000"
+    description = "configure the JMX port"
+    launch = true
+    name = "BPL_JMX_PORT"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "enables Java remote debugging support"
+    launch = true
+    name = "BPL_DEBUG_ENABLED"
+
+  [[metadata.configurations]]
+    default = "8000"
+    description = "configure the remote debugging port"
+    launch = true
+    name = "BPL_DEBUG_PORT"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "configure whether to suspend execution until a debugger has attached"
+    launch = true
+    name = "BPL_DEBUG_SUSPEND"
+
+  [[metadata.configurations]]
+    build = true
+    default = "11"
+    description = "the Java version"
+    name = "BP_JVM_VERSION"
+
+  [[metadata.configurations]]
+    build = true
+    default = "JRE"
+    description = "the JVM type - JDK or JRE"
+    name = "BP_JVM_TYPE"
+
+  [[metadata.configurations]]
+    description = "the JVM launch flags"
+    launch = true
+    name = "JAVA_TOOL_OPTIONS"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Adoptium JDK"
+    sha256 = "cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz"
+    version = "8.0.302"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    id = "jre"
+    name = "Adoptium JRE"
+    sha256 = "a74e63657ad04151a8f95202071d2895f1cc9295c910ad3c361ff1cc27395107"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_hotspot_8u302b08.tar.gz"
+    version = "8.0.302"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Adoptium JDK"
+    sha256 = "8770f600fc3b89bf331213c7aa21f8eedd9ca5d96036d1cd48cb2748a3dbefd2"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz"
+    version = "11.0.12"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    id = "jre"
+    name = "Adoptium JRE"
+    sha256 = "e813e270b7ea0a13f9c400ce5abd4cb811aacbd536b8909e6c7f0e346f78348c"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.12_7.tar.gz"
+    version = "11.0.12"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Adoptium JDK"
+    sha256 = "323d6d7474a359a28eff7ddd0df8e65bd61554a8ed12ef42fd9365349e573c2c"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_linux_hotspot_16.0.2_7.tar.gz"
+    version = "16.0.2"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Adoptium JDK"
+    sha256 = "6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz"
+    version = "17.0.0"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+[[stacks]]
+  id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+  id = "io.paketo.stacks.tiny"
+
+[[stacks]]
+  id = "*"
