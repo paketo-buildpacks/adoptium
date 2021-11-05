@@ -140,10 +140,10 @@ api = "0.6"
   [[metadata.dependencies]]
     id = "jre"
     name = "Adoptium JRE"
-    sha256 = "a74e63657ad04151a8f95202071d2895f1cc9295c910ad3c361ff1cc27395107"
+    sha256 = "18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_hotspot_8u302b08.tar.gz"
-    version = "8.0.302"
+    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz"
+    version = "8.0.312"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
