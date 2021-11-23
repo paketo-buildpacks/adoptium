@@ -20,8 +20,8 @@ api = "0.7"
   id = "paketo-buildpacks/adoptium"
   keywords = ["java", "jvm", "jre", "jdk"]
   name = "Paketo Adoptium Buildpack"
-  version = "{{.version}}"
   sbom-formats = ["application/vnd.syft+json", "application/vnd.cyclonedx+json"]
+  version = "{{.version}}"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -127,80 +127,70 @@ api = "0.7"
     name = "JAVA_TOOL_OPTIONS"
 
   [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update312:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
+    purl = "pkg:generic/adoptium-jdk@8.0.312?arch=amd64"
     sha256 = "699981083983b60a7eeb511ad640fae3ae4b879de5a3980fe837e8ade9c34a08"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jdk_x64_linux_hotspot_8u312b07.tar.gz"
     version = "8.0.312"
-    purl = "pkg:generic/adoptium-jdk@8.0.312?arch=amd64"
-    cpes = [
-      "cpe:2.3:a:oracle:jdk:1.8.0:update312:*:*:*:*:*:*"
-    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jre:1.8.0:update312:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
+    purl = "pkg:generic/adoptium-jre@8.0.312?arch=amd64"
     sha256 = "18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz"
     version = "8.0.312"
-    purl = "pkg:generic/adoptium-jre@8.0.312?arch=amd64"
-    cpes = [
-      "cpe:2.3:a:oracle:jre:1.8.0:update312:*:*:*:*:*:*"
-    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jdk:11.0.13:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
+    purl = "pkg:generic/adoptium-jdk@11.0.13?arch=amd64"
     sha256 = "3b1c0c34be4c894e64135a454f2d5aaa4bd10aea04ec2fa0c0efe6bb26528e30"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.13_8.tar.gz"
     version = "11.0.13"
-    purl = "pkg:generic/adoptium-jdk@11.0.13?arch=amd64"
-    cpes = [
-      "cpe:2.3:a:oracle:jdk:11.0.13:*:*:*:*:*:*:*"
-    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jre:11.0.13:*:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
+    purl = "pkg:generic/adoptium-jre@11.0.13?arch=amd64"
     sha256 = "fb0a27e6e1f26a1ee79daa92e4cfe3ec0d676acfe114d99dd84b3414f056e8a0"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.13_8.tar.gz"
     version = "11.0.13"
-    purl = "pkg:generic/adoptium-jre@11.0.13?arch=amd64"
-    cpes = [
-      "cpe:2.3:a:oracle:jre:11.0.13:*:*:*:*:*:*:*"
-    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jdk:17.0.1:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
+    purl = "pkg:generic/adoptium-jdk@17.0.1?arch=amd64"
     sha256 = "6ea18c276dcbb8522feeebcfc3a4b5cb7c7e7368ba8590d3326c6c3efc5448b6"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_linux_hotspot_17.0.1_12.tar.gz"
     version = "17.0.1"
-    purl = "pkg:generic/adoptium-jdk@17.0.1?arch=amd64"
-    cpes = [
-      "cpe:2.3:a:oracle:jdk:17.0.1:*:*:*:*:*:*:*"
-    ]
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
