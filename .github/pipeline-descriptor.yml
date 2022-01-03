@@ -59,3 +59,11 @@ dependencies:
     implementation: hotspot
     type:           jdk
     version:        "[17,18)"
+- name:            JRE 17
+  id:              jre
+  version_pattern: "17\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[17,18)"
