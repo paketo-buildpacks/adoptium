@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/adoptium
+module github.com/paketo-buildpacks/adoptium/v10
 
 go 1.17
 
