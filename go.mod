@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/paketo-buildpacks/libjvm v1.35.0
-	github.com/paketo-buildpacks/libpak v1.58.0
+	github.com/paketo-buildpacks/libpak v1.59.0
 )
 
 require (
@@ -12,6 +12,7 @@ require (
 	github.com/Masterminds/semver/v3 v3.1.1 // indirect
 	github.com/buildpacks/libcnb v1.25.5 // indirect
 	github.com/creack/pty v1.1.17 // indirect
+	github.com/h2non/filetype v1.1.3 // indirect
 	github.com/heroku/color v0.0.6 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
