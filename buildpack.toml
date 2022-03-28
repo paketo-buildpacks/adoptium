@@ -210,6 +210,20 @@ api = "0.7"
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
+[[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jdk:18.0.0:*:*:*:*:*:*:*"]
+    id = "jdk"
+    name = "Adoptium JDK"
+    purl = "pkg:generic/adoptium-jdk@18.0.0?arch=amd64"
+    sha256 = "82d67983f92f16b5fb57176fa4c228e44ecc6f671b3c3523140fba7fb904dceb"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18%2B36/OpenJDK18U-jdk_x64_linux_hotspot_18_36.tar.gz"
+    version = "18.0.0"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
 [[stacks]]
   id = "io.buildpacks.stacks.bionic"
 

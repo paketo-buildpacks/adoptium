@@ -1,4 +1,4 @@
-name: Update JRE 8
+name: Update JDK 18
 "on":
     schedule:
         - cron: 0 5 * * 1-5
@@ -45,8 +45,8 @@ jobs:
               uses: docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
               with:
                 implementation: hotspot
-                type: jre
-                version: '[8,9)'
+                type: jdk
+                version: '[18,19)'
             - name: Update Buildpack Dependency
               id: buildpack
               run: |-
@@ -88,25 +88,25 @@ jobs:
                 echo "::set-output name=version-label::${LABEL}"
               env:
                 CPE: ${{ steps.dependency.outputs.cpe }}
-                CPE_PATTERN: update[\d]+
-                ID: jre
+                CPE_PATTERN: ""
+                ID: jdk
                 PURL: ${{ steps.dependency.outputs.purl }}
                 PURL_PATTERN: ""
                 SHA256: ${{ steps.dependency.outputs.sha256 }}
                 URI: ${{ steps.dependency.outputs.uri }}
                 VERSION: ${{ steps.dependency.outputs.version }}
-                VERSION_PATTERN: ^8\.[\d]+\.[\d]+
+                VERSION_PATTERN: 18\.[\d]+\.[\d]+
             - uses: peter-evans/create-pull-request@v3
               with:
                 author: ${{ secrets.JAVA_GITHUB_USERNAME }} <${{ secrets.JAVA_GITHUB_USERNAME }}@users.noreply.github.com>
-                body: Bumps `JRE 8` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
-                branch: update/buildpack/jre-8
+                body: Bumps `JDK 18` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
+                branch: update/buildpack/jdk-18
                 commit-message: |-
-                    Bump JRE 8 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                    Bump JDK 18 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
 
-                    Bumps JRE 8 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}.
+                    Bumps JDK 18 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}.
                 delete-branch: true
                 labels: ${{ steps.buildpack.outputs.version-label }}, type:dependency-upgrade
                 signoff: true
-                title: Bump JRE 8 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                title: Bump JDK 18 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
                 token: ${{ secrets.JAVA_GITHUB_TOKEN }}
