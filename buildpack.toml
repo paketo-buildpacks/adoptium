@@ -127,14 +127,14 @@ api = "0.7"
     name = "JAVA_TOOL_OPTIONS"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update322:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update332:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@8.0.322?arch=amd64"
-    sha256 = "3d62362a78c9412766471b05253507a4cfc212daea5cdf122860173ce902400e"
+    sha256 = "adc13a0a0540d77f0a3481b48f10d61eb203e5ad4914507d489c2de3bd3d83da"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u322b06.tar.gz"
-    version = "8.0.322"
+    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u332b09.tar.gz"
+    version = "8.0.332"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
