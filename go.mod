@@ -3,7 +3,7 @@ module github.com/paketo-buildpacks/adoptium/v10
 go 1.17
 
 require (
-	github.com/paketo-buildpacks/libjvm v1.36.2
+	github.com/paketo-buildpacks/libjvm v1.37.0
 	github.com/paketo-buildpacks/libpak v1.60.1
 )
 
@@ -19,7 +19,7 @@ require (
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-shellwords v1.0.12 // indirect
-	github.com/miekg/dns v1.1.48 // indirect
+	github.com/miekg/dns v1.1.49 // indirect
 	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
 	github.com/onsi/gomega v1.19.0 // indirect
 	github.com/pavel-v-chernykh/keystore-go/v4 v4.3.0 // indirect
