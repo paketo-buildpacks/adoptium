@@ -34,6 +34,6 @@ func main() {
 
 	libpak.Main(
 		libjvm.Detect{},
-		libjvm.Build{Logger: logger},
+		libjvm.NewBuild(logger),
 	)
 }
