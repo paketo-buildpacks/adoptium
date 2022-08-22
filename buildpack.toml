@@ -185,9 +185,9 @@ api = "0.7"
     id = "jre"
     name = "Adoptium JRE"
     purl = "pkg:generic/adoptium-jre@11.0.16?arch=amd64"
-    sha256 = "74988677f1e1692f8f482ae5f75814b908bb3cf5a8b7d9872873a42e330e7595"
+    sha256 = "1ffe1a682e8179e35238bf3f93aba0cb185850e202c676f41d38cb0561883eda"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.16_8.tar.gz"
+    uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jre_x64_linux_hotspot_11.0.16.1_1.tar.gz"
     version = "11.0.16"
 
     [[metadata.dependencies.licenses]]
