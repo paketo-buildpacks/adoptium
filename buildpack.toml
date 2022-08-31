@@ -19,7 +19,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/adoptium"
   id = "paketo-buildpacks/adoptium"
   keywords = ["java", "jvm", "jre", "jdk"]
-  name = "Paketo Adoptium Buildpack"
+  name = "Paketo Buildpack for Adoptium"
   sbom-formats = ["application/vnd.syft+json", "application/vnd.cyclonedx+json"]
   version = "{{.version}}"
 
