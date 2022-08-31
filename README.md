@@ -1,10 +1,10 @@
 # `gcr.io/paketo-buildpacks/adoptium`
 
-The Paketo Adoptium Buildpack is a Cloud Native Buildpack that provides the Adoptium implementations of JREs and JDKs.
+The Paketo Buildpack for Adoptium is a Cloud Native Buildpack that provides the Adoptium implementations of JREs and JDKs.
 
 This buildpack is designed to work in collaboration with other buildpacks which request contributions of JREs and JDKs.
 
-The Paketo Adoptium Buildpack is the successor to the Paketo AdoptOpenJDK Buildpack. This change is to keep the Paketo buildpacks in sync with [changes to the upstream project](https://adoptium.net/faq.html#AdoptOpenJDK).
+The Paketo Buildpack for Adoptium is the successor to the Paketo Buildpack for AdoptOpenJDK. This change is to keep the Paketo buildpacks in sync with [changes to the upstream project](https://adoptium.net/faq.html#AdoptOpenJDK).
 
 ## Behavior
 
