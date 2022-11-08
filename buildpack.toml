@@ -223,18 +223,32 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:18.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:19.0.1:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
-    purl = "pkg:generic/adoptium-jdk@18.0.2?arch=amd64"
-    sha256 = "7d6beba8cfc0a8347f278f7414351191a95a707d46b6586e9a786f2669af0f8b"
+    purl = "pkg:generic/adoptium-jdk@19.0.1?arch=amd64"
+    sha256 = "163da7ea140210bae97c6a4590c757858ab4520a78af0e3e33129863d4087552"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jdk_x64_linux_hotspot_18.0.2.1_1.tar.gz"
-    version = "18.0.2"
+    uri = "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jdk_x64_linux_hotspot_19.0.1_10.tar.gz"
+    version = "19.0.1"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
+
+  [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:oracle:jre:19.0.1:*:*:*:*:*:*:*"]
+    id = "jre"
+    name = "Adoptium JRE"
+    purl = "pkg:generic/adoptium-jre@19.0.1?arch=amd64"
+    sha256 = "68cae46c973e48ca6777cd0026bbf25f3457bd3d6730c36bd79d4f3b398c8338"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_x64_linux_hotspot_19.0.1_10.tar.gz"
+    version = "19.0.1"
+
+  [[metadata.dependencies.licenses]]
+    type = "GPL-2.0 WITH Classpath-exception-2.0"
+    uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
 [[stacks]]
   id = "io.buildpacks.stacks.bionic"
