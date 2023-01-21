@@ -41,8 +41,6 @@ The buildpack will do the following if a JRE is requested:
 * Contributes Memory Calculator to a layer marked `launch`
 * Contributes Heap Dump helper to a layer marked `launch`
 
-Please note that starting with Java version 16, the upstream Adoptium project has elected to [forgo JRE releases](https://adoptium.net/faq.html#jres). As such, this buildpack will only include JREs for Java 8 and 11. If you select a JRE for 16+, you'll end up with a JDK instead.
-
 ## Configuration
 
 | Environment Variable          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
