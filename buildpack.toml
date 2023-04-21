@@ -153,14 +153,14 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jre:1.8.0:update362:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jre:1.8.0:update372:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
-    purl = "pkg:generic/adoptium-jre@8.0.352?arch=amd64"
-    sha256 = "c8c4e180f915fc7c163240bf363dcdf2b481cd2723fabfc3d08ccf12e049611f"
+    purl = "pkg:generic/adoptium-jre@8.0.372?arch=amd64"
+    sha256 = "b6fdfe32085a884c11b31f66aa67ac62811df7112fb6fb08beea61376a86fbb4"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jre_x64_linux_hotspot_8u362b09.tar.gz"
-    version = "8.0.362"
+    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jre_x64_linux_hotspot_8u372b07.tar.gz"
+    version = "8.0.372"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
