@@ -213,9 +213,9 @@ api = "0.7"
     id = "jre"
     name = "Adoptium JRE"
     purl = "pkg:generic/adoptium-jre@17.0.8?arch=amd64"
-    sha256 = "dddbb5f817a77445711528a414678806b00b83c92701fe595c50cdb207758ae9"
+    sha256 = "ab68857594792474a3049ede09ea1178e42df29803a6a41be771794f571b2d4e"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.8_7.tar.gz"
+    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.8.1_1.tar.gz"
     version = "17.0.8"
 
     [[metadata.dependencies.licenses]]
