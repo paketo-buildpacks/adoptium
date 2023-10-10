@@ -204,6 +204,8 @@ api = "0.7"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@17.0.8?arch=amd64"
     sha256 = "c25dfbc334068a48c19c44ce39ad4b8427e309ae1cfa83f23c102e78b8a6dcc0"
+    source = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-jdk-sources_17.0.8.1_1.tar.gz"
+    source-sha256 = "49d4791e6f6be56ecbd39e35e27bd288346d01d022ac3ea77497e46e7731cfb6"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.8.1_1.tar.gz"
     version = "17.0.8"
