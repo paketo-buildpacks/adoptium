@@ -176,6 +176,8 @@ api = "0.7"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@11.0.20?arch=amd64"
     sha256 = "398a64bff002f0e3b0c01ecd24a1a32c83cb72a5255344219e9757d4ddd9f857"
+    source = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jdk-sources_11.0.20.1_1.tar.gz"
+    source-sha256 = "f97bdcc9732ae67c1a754fafd36b7870282fb424cf656e8f4c59215810beff38"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20.1_1.tar.gz"
     version = "11.0.20"
