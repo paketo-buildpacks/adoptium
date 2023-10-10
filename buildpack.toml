@@ -242,6 +242,8 @@ api = "0.7"
     name = "Adoptium JRE"
     purl = "pkg:generic/adoptium-jre@20.0.2?arch=amd64"
     sha256 = "e3592e86290c192804d9c6b5035d42cc32cf04141d1c0b9d1ecb67739826c8c5"
+    source = "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk-sources_20.0.2_9.tar.gz"
+    source-sha256 = "b03350e23fed01ff05086247480fba1f7c59aee33aeea2aae80da1bb0759649b"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jre_x64_linux_hotspot_20.0.2_9.tar.gz"
     version = "20.0.2"
