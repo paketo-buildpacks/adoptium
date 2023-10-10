@@ -144,6 +144,8 @@ api = "0.7"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@8.0.372?arch=amd64"
     sha256 = "789ad24dc0d9618294e3ba564c9bfda9d3f3a218604350e0ce0381bbc8f28db3"
+    source = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u382-b05/OpenJDK8U-jdk-sources_8u382b05.tar.gz"
+    source-sha256 = "23b523dfad72590e5a059d5f295b0ba21afaef9163fa6c90ef182bcd48d6828d"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
     uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u382-b05/OpenJDK8U-jdk_x64_linux_hotspot_8u382b05.tar.gz"
     version = "8.0.382"
