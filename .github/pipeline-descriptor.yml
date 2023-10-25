@@ -70,19 +70,19 @@ dependencies:
     implementation: hotspot
     type:           jre
     version:        "[17,18)"
-- name:            JDK 20
+- name:            JDK 21
   id:              jdk
-  version_pattern: "20\\.[\\d]+\\.[\\d]+"
+  version_pattern: "21\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jdk
-    version:        "[20,21)"
-- name:            JRE 20
+    version:        "[21,22)"
+- name:            JRE 21
   id:              jre
-  version_pattern: "20\\.[\\d]+\\.[\\d]+"
+  version_pattern: "21\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
   with:
     implementation: hotspot
     type:           jre
-    version:        "[20,21)"
+    version:        "[21,22)"
