@@ -86,3 +86,19 @@ dependencies:
     implementation: hotspot
     type:           jre
     version:        "[21,22)"
+- name:            JDK 22
+  id:              jdk
+  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[22,23)"
+- name:            JRE 22
+  id:              jre
+  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[22,23)"
