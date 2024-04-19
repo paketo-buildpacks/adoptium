@@ -335,7 +335,7 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@11.0.23?arch=arm64"
-    sha256 = "blank"
+    sha256 = "e00476a7be3c4adfa9b3d55d30768967fd246a8352e518894e183fa444d4d3ce"
     source = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk-sources_11.0.23_9.tar.gz"
     source-sha256 = "2c68489eaf96c679039f1d0ebe0a9096234fbe941f70a4be6d38b80e8ea585d8"
     stacks = ["*"]
