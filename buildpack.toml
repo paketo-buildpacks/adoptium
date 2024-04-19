@@ -447,7 +447,7 @@ api = "0.7"
     id = "jre"
     name = "Adoptium JRE"
     purl = "pkg:generic/adoptium-jre@22.0.0?arch=arm64"
-    sha256 = "blank"
+    sha256 = "4748e5024eb0251ddf0f576e4c56d21270b1f2186f62b25fc1d89c888d742ed4"
     source = "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-jdk-sources_22_36.tar.gz"
     source-sha256 = "40e65125ca6d218f97be74cc08f174307eb324880adce9051cb0a3b2581fa95f"
     stacks = ["*"]
