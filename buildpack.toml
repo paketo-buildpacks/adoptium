@@ -367,7 +367,7 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@17.0.11?arch=arm64"
-    sha256 = "blank"
+    sha256 = "a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d"
     source = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk-sources_17.0.11_9.tar.gz"
     source-sha256 = "ab84e710f2069db2201f73cc3d0ed4138b2357168509c970504bf2cfe280ee59"
     stacks = ["*"]
