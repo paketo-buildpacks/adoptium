@@ -303,7 +303,7 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@8.0.402?arch=arm64"
-    sha256 = "blank"
+    sha256 = "3504d748a93f23cac8c060bd33231bd51e90dcb620f38dadc6239b6cd2a5011c"
     source = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jdk-sources_8u412b08.tar.gz"
     source-sha256 = "3360d7e9a16f85b2248ea09cbd9174db00ec473d7a4a5ed4931a635b062875f2"
     stacks = ["*"]
