@@ -2,6 +2,9 @@ github:
   username: ${{ secrets.JAVA_GITHUB_USERNAME }}
   token:    ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
 
+helpers:
+  "bin/helper": "github.com/paketo-buildpacks/libjvm/cmd/helper"
+
 codeowners:
 - path:  "*"
   owner: "@paketo-buildpacks/java-maintainers"
@@ -102,3 +105,97 @@ dependencies:
     implementation: hotspot
     type:           jre
     version:        "[22,23)"
+
+# ARM64
+- name:            JDK 8 ARM64
+  id:              jdk
+  version_pattern: "^8\\.[\\d]+\\.[\\d]+"
+  cpe_pattern:     "update[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[8,9)"
+    arch: "arm64"
+- name:            JRE 8 ARM64
+  id:              jre
+  version_pattern: "^8\\.[\\d]+\\.[\\d]+"
+  cpe_pattern:     "update[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[8,9)"
+    arch: "arm64"
+- name:            JDK 11 ARM64
+  id:              jdk
+  version_pattern: "11\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[11,12)"
+    arch: "arm64"
+- name:            JRE 11 ARM64
+  id:              jre
+  version_pattern: "11\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[11,12)"
+    arch: "arm64"
+- name:            JDK 17 ARM64
+  id:              jdk
+  version_pattern: "17\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[17,18)"
+    arch: "arm64"
+- name:            JRE 17 ARM64
+  id:              jre
+  version_pattern: "17\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[17,18)"
+    arch: "arm64"
+- name:            JDK 21 ARM64
+  id:              jdk
+  version_pattern: "21\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[21,22)"
+    arch: "arm64"
+- name:            JRE 21 ARM64
+  id:              jre
+  version_pattern: "21\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[21,22)"
+    arch: "arm64"
+- name:            JDK 22 ARM64
+  id:              jdk
+  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[22,23)"
+    arch: "arm64"
+- name:            JRE 22 ARM64
+  id:              jre
+  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[22,23)"
+    arch: "arm64"
