@@ -399,7 +399,7 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@21.0.3?arch=arm64"
-    sha256 = "blank"
+    sha256 = "7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31"
     source = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk-sources_21.0.3_9.tar.gz"
     source-sha256 = "0c77b1e27b5d0a604245484d225d41fe37905b0eb46dc75b51a2b4b387e3a077"
     stacks = ["*"]
