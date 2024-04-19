@@ -431,7 +431,7 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-dk@22.0.0?arch=arm64"
-    sha256 = "blank"
+    sha256 = "4b52670caea44848cee893e35c804380817b6eff166cf64ee70ca2bfaac3d1c7"
     source = "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-jdk-sources_22_36.tar.gz"
     source-sha256 = "40e65125ca6d218f97be74cc08f174307eb324880adce9051cb0a3b2581fa95f"
     stacks = ["*"]
