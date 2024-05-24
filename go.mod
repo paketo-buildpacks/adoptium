@@ -3,7 +3,7 @@ module github.com/paketo-buildpacks/adoptium/v10
 go 1.22
 
 require (
-	github.com/paketo-buildpacks/libjvm v1.44.4
+	github.com/paketo-buildpacks/libjvm v1.45.0
 	github.com/paketo-buildpacks/libpak v1.70.0
 )
 
