@@ -267,16 +267,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:22.0.1:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:22.0.2:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
-    purl = "pkg:generic/adoptium-dk@22.0.1?arch=amd64"
-    sha256 = "e59c6bf801cc023a1ea78eceb5e6756277f1564cd0a421ea984efe6cb96cfcf8"
-    source = "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jdk-sources_22.0.1_8.tar.gz"
-    source-sha256 = "b54d9fa66e46cdbbce73495b7f1b497fd322de1a79dba9437bb4ce9ec3c23646"
+    purl = "pkg:generic/adoptium-dk@22.0.2?arch=amd64"
+    sha256 = "05cd9359dacb1a1730f7c54f57e0fed47942a5292eb56a3a0ee6b13b87457a43"
+    source = "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-jdk-sources_22.0.2_9.tar.gz"
+    source-sha256 = "a7e66622a4fee097c25b5dc745866de67a9252fb7fed525d476439f99e973ad9"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jdk_x64_linux_hotspot_22.0.1_8.tar.gz"
-    version = "22.0.1"
+    uri = "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-jdk_x64_linux_hotspot_22.0.2_9.tar.gz"
+    version = "22.0.2"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
