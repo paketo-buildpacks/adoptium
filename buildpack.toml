@@ -427,7 +427,7 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-  cpes = ["cpe:2.3:a:oracle:jdk:23.0.0:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:23.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-dk@23.0.0?arch=arm64"
