@@ -251,16 +251,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jre:21.0.5:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jre:21.0.6:*:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
-    purl = "pkg:generic/adoptium-jre@21.0.5?arch=amd64"
-    sha256 = "553dda64b3b1c3c16f8afe402377ffebe64fb4a1721a46ed426a91fd18185e62"
-    source = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk-sources_21.0.5_11.tar.gz"
-    source-sha256 = "96310bd4ffdf9ef847e3e7453a7bbbadc75dacfe9b3089fe3d0403d073fe9e7c"
+    purl = "pkg:generic/adoptium-jre@21.0.6?arch=amd64"
+    sha256 = "7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937"
+    source = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk-sources_21.0.6_7.tar.gz"
+    source-sha256 = "47fe4e81dfa1732aaf97044d92dd5d8a222589e62044895d60700c367418608c"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_x64_linux_hotspot_21.0.5_11.tar.gz"
-    version = "21.0.5"
+    uri = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz"
+    version = "21.0.6"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
