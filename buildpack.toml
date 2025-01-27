@@ -427,16 +427,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:23.0.1:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:23.0.2:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
-    purl = "pkg:generic/adoptium-dk@23.0.1?arch=arm64"
-    sha256 = "808e3843293e50515bf02ad2f956e543da65e32dac82ae7a266a147b3485c61a"
-    source = "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-jdk-sources_23.0.1_11.tar.gz"
-    source-sha256 = "77cd5f9297130cacd23bacf3164575304c07aec938a884f6ae80623fe8581466"
+    purl = "pkg:generic/adoptium-dk@23.0.2?arch=arm64"
+    sha256 = "fb43ae1202402842559cb6223886ec1663b90ffbec48479abbcb92c92c9012eb"
+    source = "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-jdk-sources_23.0.2_7.tar.gz"
+    source-sha256 = "1551a6c9c804c44fea22bc2c99cc4b501513f4fb48561b1be8cb55633458a6da"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-jdk_aarch64_linux_hotspot_23.0.1_11.tar.gz"
-    version = "23.0.1"
+    uri = "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-jdk_aarch64_linux_hotspot_23.0.2_7.tar.gz"
+    version = "23.0.2"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
