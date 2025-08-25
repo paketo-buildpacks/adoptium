@@ -1,6 +1,8 @@
 module github.com/paketo-buildpacks/adoptium/v10
 
-go 1.24
+go 1.24.0
+
+toolchain go1.24.6
 
 require (
 	github.com/paketo-buildpacks/libjvm v1.46.0
@@ -21,7 +23,7 @@ require (
 	github.com/mattn/go-shellwords v1.0.12 // indirect
 	github.com/miekg/dns v1.1.68 // indirect
 	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
-	github.com/onsi/gomega v1.38.0 // indirect
+	github.com/onsi/gomega v1.38.1 // indirect
 	github.com/pavlo-v-chernykh/keystore-go/v4 v4.5.0 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	golang.org/x/crypto v0.41.0 // indirect
