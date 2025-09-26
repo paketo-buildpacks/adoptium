@@ -431,7 +431,7 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-dk@25.0.0?arch=arm64"
-    sha256 = "6f8725d186d05c627176db9c46c732a6ef3ba41d9e9b3775c4727fc8ac642bb2"
+    sha256 = "95716d04bdfc8b10c94f4448ea8d57a3ba872d98b53c752e4c6b48f1c95bc582"
     source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk-sources_25_36.tar.gz"
     source-sha256 = "776bab928450918087e1ab9935a8b3b50f58e39cb4d2d784a1ddfe1b03af3fd3"
     stacks = ["*"]
