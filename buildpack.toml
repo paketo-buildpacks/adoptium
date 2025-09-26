@@ -267,32 +267,32 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:24.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:25.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
-    purl = "pkg:generic/adoptium-dk@24.0.2?arch=amd64"
-    sha256 = "aea1cc55e51cf651c85f2f00ad021603fe269c4bb6493fa97a321ad770c9b096"
-    source = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk-sources_24.0.2_12.tar.gz"
-    source-sha256 = "f76c96107ae408ce6f59b398b87d8747555800fc99abe810a260289de1771d4c"
+    purl = "pkg:generic/adoptium-dk@25.0.0?arch=amd64"
+    sha256 = "ee04de95ab9da7287d40bd2173076ecc2a6dd662f007bedfc6eb0380c0ef90e8"
+    source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk-sources_25_36.tar.gz"
+    source-sha256 = "776bab928450918087e1ab9935a8b3b50f58e39cb4d2d784a1ddfe1b03af3fd3"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk_x64_linux_hotspot_24.0.2_12.tar.gz"
-    version = "24.0.2"
+    uri = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_linux_hotspot_25_36.tar.gz"
+    version = "25.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jre:24.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jre:25.0.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
-    purl = "pkg:generic/adoptium-jre@24.0.2?arch=amd64"
-    sha256 = "bee902852ae8b6698e04eb1599dc94af844ae45b72b3b8ec854350b9aba41335"
-    source = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk-sources_24.0.2_12.tar.gz"
-    source-sha256 = "f76c96107ae408ce6f59b398b87d8747555800fc99abe810a260289de1771d4c"
+    purl = "pkg:generic/adoptium-jre@25.0.0?arch=amd64"
+    sha256 = "5e3de13a1487ecc90f8b0cddc83a6cd4e053b4cd48ddcfe5d1f19178e6089fba"
+    source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk-sources_25_36.tar.gz"
+    source-sha256 = "776bab928450918087e1ab9935a8b3b50f58e39cb4d2d784a1ddfe1b03af3fd3"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jre_x64_linux_hotspot_24.0.2_12.tar.gz"
-    version = "24.0.2"
+    uri = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jre_x64_linux_hotspot_25_36.tar.gz"
+    version = "25.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -427,32 +427,32 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:24.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:25.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
-    purl = "pkg:generic/adoptium-dk@24.0.2?arch=arm64"
+    purl = "pkg:generic/adoptium-dk@25.0.0?arch=arm64"
     sha256 = "6f8725d186d05c627176db9c46c732a6ef3ba41d9e9b3775c4727fc8ac642bb2"
-    source = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk-sources_24.0.2_12.tar.gz"
-    source-sha256 = "f76c96107ae408ce6f59b398b87d8747555800fc99abe810a260289de1771d4c"
+    source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk-sources_25_36.tar.gz"
+    source-sha256 = "776bab928450918087e1ab9935a8b3b50f58e39cb4d2d784a1ddfe1b03af3fd3"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.2_12.tar.gz"
-    version = "24.0.2"
+    uri = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_linux_hotspot_25_36.tar.gz"
+    version = "25.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jre:24.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jre:25.0.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
-    purl = "pkg:generic/adoptium-jre@24.0.2?arch=arm64"
-    sha256 = "6b06ed1d91930ef86afc7d2159948aa9b3054b154cd8afda35d1fddd158fc11d"
-    source = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk-sources_24.0.2_12.tar.gz"
-    source-sha256 = "f76c96107ae408ce6f59b398b87d8747555800fc99abe810a260289de1771d4c"
+    purl = "pkg:generic/adoptium-jre@25.0.0?arch=arm64"
+    sha256 = "939a1517971985363b2b57b8c6008f4bd48b91f565366d6eb3bae3aa503a05e2"
+    source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk-sources_25_36.tar.gz"
+    source-sha256 = "776bab928450918087e1ab9935a8b3b50f58e39cb4d2d784a1ddfe1b03af3fd3"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jre_aarch64_linux_hotspot_24.0.2_12.tar.gz"
-    version = "24.0.2"
+    uri = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jre_aarch64_linux_hotspot_25_36.tar.gz"
+    version = "25.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
