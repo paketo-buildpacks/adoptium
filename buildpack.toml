@@ -318,7 +318,7 @@ api = "0.7"
     cpes = ["cpe:2.3:a:oracle:jre:1.8.0:update492:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
-    purl = "pkg:generic/adoptium-jre@8.0.482?arch=arm64"
+    purl = "pkg:generic/adoptium-jre@8.0.492?arch=arm64"
     sha256 = "d5e50cb002600007dbdfac523605d26196607fa5212db0942ef05cdce9fe2892"
     source = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk-sources_8u492b09.tar.gz"
     source-sha256 = "44b1392bd15fed9a0ab6988fdeb42ff6c62d3deddce9e7efcf1dca9a48aabeb2"
