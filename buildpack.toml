@@ -299,16 +299,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update482:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update492:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@8.0.482?arch=arm64"
-    sha256 = "ada72fbf191fb287b4c1e54be372b64c40c27c2ffbfa01f880c92af11f4e7c94"
-    source = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk-sources_8u482b08.tar.gz"
-    source-sha256 = "5685fa2e9c1dff2e62010f389001f5ec6ab5df14f64c4cd4371f522157cf0025"
+    sha256 = "3c2253b986909c20f79d6de7a0cb957f89c243df57615897836046e24d2e5257"
+    source = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk-sources_8u492b09.tar.gz"
+    source-sha256 = "44b1392bd15fed9a0ab6988fdeb42ff6c62d3deddce9e7efcf1dca9a48aabeb2"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u482b08.tar.gz"
-    version = "8.0.482"
+    uri = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u492b09.tar.gz"
+    version = "8.0.492"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
