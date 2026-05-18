@@ -102,6 +102,22 @@ dependencies:
     implementation: hotspot
     type:           jre
     version:        "[25,26)"
+- name:            JDK 26
+  id:              jdk
+  version_pattern: "26\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[26,27)"
+- name:            JRE 26
+  id:              jre
+  version_pattern: "26\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[26,27)"
 
 # ARM64
 - name:            JDK 8 ARM64
@@ -195,4 +211,22 @@ dependencies:
     implementation: hotspot
     type:           jre
     version:        "[25,26)"
+    arch: "arm64"
+- name:            JDK 26 ARM64
+  id:              jdk
+  version_pattern: "26\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jdk
+    version:        "[26,27)"
+    arch: "arm64"
+- name:            JRE 26 ARM64
+  id:              jre
+  version_pattern: "26\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/adoptium-dependency:main
+  with:
+    implementation: hotspot
+    type:           jre
+    version:        "[26,27)"
     arch: "arm64"
