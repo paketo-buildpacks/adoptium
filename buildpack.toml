@@ -465,9 +465,10 @@ api = "0.7"
     name = "Adoptium JRE"
     os = "linux"
     purl = "pkg:generic/adoptium-jdk@26.0.1?arch=amd64"
-    sha256 = "1e42e40553851693dd96542d2aaa09c7b9982eac92da1d3db4c0bcd4b32d6576"
+    sha256 = "8e512f13e575a43655fc92319436c94890c137b9035cc6bd6f9cf24239704d3a"
     source = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk-sources_26.0.1_8.tar.gz"
-    uri = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk-sources_26.0.1_8.tar.gz"
+    source-sha256 = "1e42e40553851693dd96542d2aaa09c7b9982eac92da1d3db4c0bcd4b32d6576"
+    uri = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_x64_linux_hotspot_26.0.1_8.tar.gz"
     version = "26.0.1"
 
     [[metadata.dependencies.licenses]]
