@@ -363,16 +363,16 @@ api = "0.7"
       uri = "https://openjdk.java.net/legal/gplv2+ce.html"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:17.0.19:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:17.0.20:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Adoptium JDK"
-    purl = "pkg:generic/adoptium-jdk@17.0.19?arch=arm64"
-    sha256 = "83a52172678ec8975164648654869cb2e71d7c748b47aca94b29bbfa10c18e81"
-    source = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk-sources_17.0.19_10.tar.gz"
-    source-sha256 = "230bd0a6d7b01012a4942be6f4cd8655b5b1c7c7bd3786096d698ab0a7bb5942"
+    purl = "pkg:generic/adoptium-jdk@17.0.20?arch=arm64"
+    sha256 = "d143936f473a4cb24e3b0e247d6d0775769d55ec9775c339540e753059a8d77a"
+    source = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20%2B8/OpenJDK17U-jdk-sources_17.0.20_8.tar.gz"
+    source-sha256 = "a9fadd969738666d59a241bc6fb01d0963154489d934ee387630dd4dca5e8f54"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.19_10.tar.gz"
-    version = "17.0.19"
+    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20_8.tar.gz"
+    version = "17.0.20"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
