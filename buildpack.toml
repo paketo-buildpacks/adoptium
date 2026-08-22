@@ -239,11 +239,11 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@21.0.12?arch=amd64"
-    sha256 = "e4446ff06a276155697597cc0f1b15da004ff083f4964a35271ecee567177370"
-    source = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12%2B8/OpenJDK21U-jdk-sources_21.0.12_8.tar.gz"
-    source-sha256 = "4a7347be4f598178adffc9d91a468a857c1eaf95756837afb213bc9986032af9"
+    sha256 = "ce79869e1307ed8ee1e2baa86a412b1eb5b75d10a01006d788a6f968bcfaee94"
+    source = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk-sources_21.0.12.1_1.tar.gz"
+    source-sha256 = "573057d03584ae793fb7ec9a14c76d826d9187a53efeefd99da47403a5308234"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12%2B8/OpenJDK21U-jdk_x64_linux_hotspot_21.0.12_8.tar.gz"
+    uri = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_linux_hotspot_21.0.12.1_1.tar.gz"
     version = "21.0.12"
 
     [[metadata.dependencies.licenses]]
