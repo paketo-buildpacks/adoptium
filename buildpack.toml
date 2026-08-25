@@ -335,11 +335,11 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-jdk@11.0.32?arch=arm64"
-    sha256 = "66a7d4af3572d920b0f1b01710ffa79888d4ddd1b784632e33a3d711aa7d1e63"
-    source = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32%2B9/OpenJDK11U-jdk-sources_11.0.32_9.tar.gz"
-    source-sha256 = "b38c7e07c326f536720ded57478eef3f6be671e4fdcfbc2bbda13aec00cd9116"
+    sha256 = "f27033e6f7523c1b0b2565a78e9c0e0abe5596a854ce00ca04ec1b06ece7a935"
+    source = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jdk-sources_11.0.32.1_1.tar.gz"
+    source-sha256 = "8382a74468030f070796ae8f646c897cafd6d61b7616fa3365631cabb8f3e3aa"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.32_9.tar.gz"
+    uri = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.32.1_1.tar.gz"
     version = "11.0.32"
 
     [[metadata.dependencies.licenses]]
