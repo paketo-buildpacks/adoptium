@@ -460,16 +460,16 @@ api = "0.7"
 
   [[metadata.dependencies]]
     arch = "amd64"
-    cpes = ["cpe:2.3:a:oracle:jdk:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:27.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
-    name = "Adoptium JRE"
+    name = "Adoptium JDK"
     os = "linux"
-    purl = "pkg:generic/adoptium-jdk@26.0.2?arch=amd64"
-    sha256 = "451c12e68747bcfa2fb5a2c16b00483fedb9fa6d77bc962d30957f76ac17044d"
-    source = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk-sources_26.0.2.1_1.tar.gz"
-    source-sha256 = "ec1404dd6d45a2fd78ec9ae3744471dcd770f737c546a60e7c50a48dc9a6d58b"
-    uri = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_x64_linux_hotspot_26.0.2.1_1.tar.gz"
-    version = "26.0.2"
+    purl = "pkg:generic/adoptium-jdk@27.0.0?arch=amd64"
+    sha256 = "1cf69a4848ffb728b3b260dfd45206a51566ab571a02a30092271d4c580bccbc"
+    source = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk-sources_27_35.tar.gz"
+    source-sha256 = "80821f3d606887e9811a4be89cfcac6686d344347d47035af9f644ce59399f8a"
+    uri = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk_x64_linux_hotspot_27_35.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -477,16 +477,16 @@ api = "0.7"
 
   [[metadata.dependencies]]
     arch = "arm64"
-    cpes = ["cpe:2.3:a:oracle:jdk:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:27.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
-    name = "Adoptium JRE"
+    name = "Adoptium JDK"
     os = "linux"
-    purl = "pkg:generic/adoptium-jdk@26.0.2?arch=arm64"
-    sha256 = "9f6ad9856a7dd880061adaf88db3c4da0642113d59b7960a892f0e551c0c948c"
-    source = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk-sources_26.0.2.1_1.tar.gz"
-    source-sha256 = "ec1404dd6d45a2fd78ec9ae3744471dcd770f737c546a60e7c50a48dc9a6d58b"
-    uri = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.2.1_1.tar.gz"
-    version = "26.0.2"
+    purl = "pkg:generic/adoptium-jdk@27.0.0?arch=arm64"
+    sha256 = "e4ec5c7276290c7bde0baecba9a29be4962f5388684296406a9799d465936087"
+    source = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk-sources_27_35.tar.gz"
+    source-sha256 = "80821f3d606887e9811a4be89cfcac6686d344347d47035af9f644ce59399f8a"
+    uri = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk_aarch64_linux_hotspot_27_35.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -494,16 +494,16 @@ api = "0.7"
 
   [[metadata.dependencies]]
     arch = "arm64"
-    cpes = ["cpe:2.3:a:oracle:jdk:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:27.0.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
     os = "linux"
-    purl = "pkg:generic/adoptium-jre@26.0.2?arch=arm64"
-    sha256 = "9e1527681ae4a615044c88435d2c1a9faf1fd5c7baaf9514a4a4207608150087"
-    source = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk-sources_26.0.2.1_1.tar.gz"
-    source-sha256 = "ec1404dd6d45a2fd78ec9ae3744471dcd770f737c546a60e7c50a48dc9a6d58b"
-    uri = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jre_aarch64_linux_hotspot_26.0.2.1_1.tar.gz"
-    version = "26.0.2"
+    purl = "pkg:generic/adoptium-jre@27.0.0?arch=arm64"
+    sha256 = "a41b54098373f1ca8f75ee344db19b93ac39eca6c529c3ee9dc50f4b3e7857de"
+    source = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk-sources_27_35.tar.gz"
+    source-sha256 = "80821f3d606887e9811a4be89cfcac6686d344347d47035af9f644ce59399f8a"
+    uri = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_aarch64_linux_hotspot_27_35.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -511,16 +511,16 @@ api = "0.7"
 
   [[metadata.dependencies]]
     arch = "amd64"
-    cpes = ["cpe:2.3:a:oracle:jdk:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:27.0.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "Adoptium JRE"
     os = "linux"
-    purl = "pkg:generic/adoptium-jre@26.0.2?arch=amd64"
-    sha256 = "35773116829554fb38e6acf9b92b3ba8bb7856557c3ab885e26e7d61e8c8e1b0"
-    source = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk-sources_26.0.2.1_1.tar.gz"
-    source-sha256 = "ec1404dd6d45a2fd78ec9ae3744471dcd770f737c546a60e7c50a48dc9a6d58b"
-    uri = "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jre_x64_linux_hotspot_26.0.2.1_1.tar.gz"
-    version = "26.0.2"
+    purl = "pkg:generic/adoptium-jre@27.0.0?arch=amd64"
+    sha256 = "2cb1b81ab49f516e5aeb28ee8acf3c73d64c77ca432ac959c6511a335342d8e9"
+    source = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk-sources_27_35.tar.gz"
+    source-sha256 = "80821f3d606887e9811a4be89cfcac6686d344347d47035af9f644ce59399f8a"
+    uri = "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
