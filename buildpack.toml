@@ -431,11 +431,11 @@ api = "0.7"
     id = "jdk"
     name = "Adoptium JDK"
     purl = "pkg:generic/adoptium-dk@25.0.5?arch=arm64"
-    sha256 = "bb5b2ded252f21c6090cf780b0a408ad0d83bbb557e702955643557f13231880"
-    source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk-sources_25.0.5_8.tar.gz"
-    source-sha256 = "f331d870d998f9c144c361c220960f8ad2de169dc1b1c4dc4145291c501c2341"
+    sha256 = "c37879e0d08eeb1baa69fcbb7758cd455b7b1c0ceab1e2a136ccb1713c530984"
+    source = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jdk-sources_25.0.5.1_2.tar.gz"
+    source-sha256 = "3fb4af3a690f6c0f47462f3f813a8f09dc4a237f0c6ab462a764f15bc15313a7"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.5_8.tar.gz"
+    uri = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.5.1_2.tar.gz"
     version = "25.0.5"
 
     [[metadata.dependencies.licenses]]
