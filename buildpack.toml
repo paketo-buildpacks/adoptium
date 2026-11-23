@@ -383,11 +383,11 @@ api = "0.7"
     id = "jre"
     name = "Adoptium JRE"
     purl = "pkg:generic/adoptium-jre@17.0.21?arch=arm64"
-    sha256 = "1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5"
-    source = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk-sources_17.0.21_9.tar.gz"
-    source-sha256 = "89a455fa83b19e3a166bca47a465d51712441be607543dd465083ef2437a426d"
+    sha256 = "ed968eb2cde06ba38c3d957956cab7faced9181aaeebed4904f89e2e6efa8d11"
+    source = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21.1%2B2/OpenJDK17U-jdk-sources_17.0.21.1_2.tar.gz"
+    source-sha256 = "8f1f079f28e006318c4f79f0736dbc1300cb4a07f8b7e3ff4d8efc3ef914ea73"
     stacks = ["*"]
-    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz"
+    uri = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21.1%2B2/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21.1_2.tar.gz"
     version = "17.0.21"
 
     [[metadata.dependencies.licenses]]
